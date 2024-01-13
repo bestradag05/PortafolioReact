@@ -8,7 +8,8 @@ export default {
     extend: {
       backgroundImage: {
         header: "url(./src/assets/fondo.jpg)",
-        aboutMe: "url(./src/assets/about_me.png)"
+        aboutMe: "url(./src/assets/about_me.png)",
+        
       },
       colors: {
         primary: '#0A101E', // Tu color personalizado

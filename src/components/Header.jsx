@@ -4,7 +4,7 @@ import portada from "../assets/portada-lg.png";
 const Header = () => {
     return (
         <>
-            <header className="bg-header bg-cover bg-no-repeat ">
+            <header className="bg-header bg-cover bg-no-repeat">
 
                 <Navbar />
 
@@ -26,6 +26,7 @@ const Header = () => {
                     </div>
 
                 </div>
+                
 
             </header>
         </>

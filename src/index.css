@@ -5,6 +5,7 @@
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic);
+
 /* $color-fondo: #090909;
 $color-fondo-gris: #1c1c1c;
 $primary-color-dark: #040408;
@@ -15,19 +16,19 @@ $color-texto: #ABADB5; */
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
- 
+
 }
 
-body{
+body {
   background: #0A101E;
 }
 
-.nav-link a{
+.nav-link a {
   position: relative;
 }
 
 
-.nav-link a::before{
+.nav-link a::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -37,16 +38,16 @@ body{
   transition: all .5s ease;
 }
 
-.nav-link a:hover::before{
+.nav-link a:hover::before {
   width: 60%;
   background: #f9c542;
 }
 
-img{
+img {
   object-fit: cover;
 }
 
-.social-media{
+.social-media {
   text-decoration: none;
   border-radius: 50%;
   width: 40px;
@@ -56,13 +57,46 @@ img{
   align-items: center;
 }
 
-.social-media:hover, .social-media:focus {
-      animation: pulse 1s;
-      box-shadow: 0 0 0 1em transparent;
-    }
-  
-    @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 #f9c542;
-      }
-    }
+.social-media:hover,
+.social-media:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #f9c542;
+  }
+}
+
+.titulo_subrayado {
+  position: relative;
+}
+
+.titulo_subrayado::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 40%;
+  background: #f9c542;
+
+}
+
+.bg-skills-projects{
+  position: relative;
+}
+
+.bg-skills-projects::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: soft-light;
+  content: "";
+  background: url(./assets/skills/skills_banner.webp) 50%;
+  background-size: cover;
+  z-index: -1;
+}

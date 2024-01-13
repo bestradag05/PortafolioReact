@@ -13,7 +13,7 @@ const Navbar = () => {
                 </a>
 
                 <div className="md:hidden text-white text-xl">
-                    <i class="fa-sharp fa-solid fa-bars-sort"></i>
+                    <i className="fa-sharp fa-solid fa-bars-sort"></i>
                 </div>
 
 
@@ -24,12 +24,12 @@ const Navbar = () => {
                     <li className='nav-link'><a href="#" className="">Contact</a></li>
                     <li className={!theme ? 'hidden': 'block'}>
                         <a href="#" onClick={() => setTheme(!theme)}>
-                            <i class="fa-solid fa-sun-bright"></i>
+                            <i className="fa-solid fa-sun-bright"></i>
                         </a>
                     </li>
                     <li className={theme ? 'hidden': 'block'}>
                         <a href="#" onClick={() => setTheme(!theme)}>
-                            <i class="fa-solid fa-moon-stars"></i>
+                            <i className="fa-solid fa-moon-stars"></i>
                         </a>
                     </li>
                 </ul>
