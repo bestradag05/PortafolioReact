@@ -1,47 +1,36 @@
 import apv from '../assets/projects/apvveterinario.png'
-import styled from 'styled-components';
+import contrecargo from '../assets/projects/contrecargo.png'
+import orbeaduanas from '../assets/projects/orbeaduanas.png'
+import tienda from '../assets/projects/tienda-virtual.png'
+import react from '../assets/skills/react.png';
+import node from '../assets/skills/node.png';
+import express from '../assets/skills/express.png';
+import mongo from '../assets/skills/mongo.png';
+import html from '../assets/skills/html.png';
+import css from '../assets/skills/css.png';
+import bootstrap from '../assets/skills/bootstrap.png';
+import js from '../assets/skills/js.png';
+import Project from './Project';
 
-const ProjectItem = styled.div`
 
-    &:hover::before{
-            opacity: 1;
-    }
-
-    &:hover div{
-            opacity: 1;
-    }
-
-    &::before{
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-        background-color: rgba(0,0,0,0.5);
-        transition: all .5s ease;
-    }
-`;
 
 const SectionProjects = () => {
+
+
     return (
-        <section>
+        <section className='my-5'>
             <div className="flex justify-center mb-10 ">
                 <h2 className="text-3xl text-white uppercase font-semibold titulo_subrayado">Projects</h2>
             </div>
 
-            <div className="grid grid-cols-2">
-                <ProjectItem className='max-w-xl relative'>
-                    <img src={apv} alt="Apv Veterinario - Sistema de gestion veterinaria"
-                        className='rounded-md' />
+            <div className="grid grid-cols-2 gap-5">
+                <Project name="APV - Sistema de gestion veterinaria" image={apv} text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil." tecnology={[react, node, express, mongo]} />
 
-                    <div className='absolute top-0 p-10 text-white opacity-0'>
-                        <h3 className='text-center my-5'>APV - Sistema de Gestion Veterinaria</h3>
-                        <p className='text-justify'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptates quia, repellat sequi recusandae, quas alias magnam molestias corporis nostrum, laborum autem et explicabo hic numquam omnis. Necessitatibus, quasi dolorum.</p>
-                    </div>
-                </ProjectItem>
+                <Project name="Orbe Aduanas" image={orbeaduanas} text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil." tecnology={[html, css, bootstrap, js]} />
 
+                <Project name="Contrecargo" image={contrecargo} text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil." tecnology={[html, css, bootstrap, js]} />
+
+                <Project name="Tienda Virtual" image={tienda} text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil." tecnology={[html, css, bootstrap, js]} />
             </div>
         </section>
     );
