@@ -1,14 +1,17 @@
 const ContactMe = () => {
   return (
-    <section className="contatme p-12">
+    <section
+      id="contact"
+      className="contatme flex flex-col  items-center justify-center p-12"
+    >
       <div className="mb-10 flex items-center justify-center">
         <h2 className="titulo_subrayado text-3xl font-semibold uppercase ">
           Contact Me
         </h2>
       </div>
-      <div className="flex flex-col items-center justify-center gap-20 lg:flex-row ">
-        <div className="flex flex-shrink-0 items-center justify-center">
-          <div className=" shadow-buttonShadow mr-5 flex h-auto flex-shrink-0 items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary">
+      <div className="flex w-1/2 flex-col items-start justify-center gap-20 lg:w-full lg:flex-row lg:items-center ">
+        <div className="flex items-center justify-center">
+          <div className=" mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary shadow-buttonShadow">
             <i className="fa-solid fa-envelope"></i>
           </div>
           <div className="">
@@ -18,8 +21,8 @@ const ContactMe = () => {
           </div>
         </div>
 
-        <div className="flex flex-shrink-0 items-center justify-center">
-          <div className="shadow-buttonShadow mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary">
+        <div className="flex items-center justify-center">
+          <div className="mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary shadow-buttonShadow">
             <i className="fa-solid fa-phone"></i>
           </div>
           <div className="">
@@ -28,8 +31,8 @@ const ContactMe = () => {
           </div>
         </div>
 
-        <div className="flex flex-shrink-0 items-center justify-center">
-          <div className="shadow-buttonShadow mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary">
+        <div className="flex items-center justify-center">
+          <div className="mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary shadow-buttonShadow">
             <i className="fa-brands fa-linkedin"></i>
           </div>
           <div className="">

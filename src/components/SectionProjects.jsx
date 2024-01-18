@@ -14,14 +14,17 @@ import Project from "./Project";
 
 const SectionProjects = () => {
   return (
-    <section className=" flex flex-col items-center justify-center p-8 ">
+    <section
+      id="projects"
+      className=" flex flex-col items-center justify-center p-8 "
+    >
       <div className="mb-10 flex justify-center ">
         <h2 className="titulo_subrayado text-3xl font-semibold uppercase ">
           Projects
         </h2>
       </div>
 
-      <div className="grid w-full max-w-screen-sm grid-cols-1 place-content-center gap-10 xl:max-w-screen-xl xl:grid-cols-2">
+      <div className="grid w-full max-w-screen-lg grid-cols-1 place-content-center gap-10 lg:grid-cols-2 xl:max-w-screen-xl">
         <div className="col-span-1 flex items-center justify-center">
           <Project
             name="APV - Sistema de gestion veterinaria"

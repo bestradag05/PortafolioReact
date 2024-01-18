@@ -5,9 +5,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-header bg-cover bg-no-repeat">
-        <Navbar />
-
-        <div className=" mx-auto  mt-10 flex max-w-screen-sm flex-col px-8 text-center lg:my-0 lg:max-w-screen-xl lg:flex-row lg:text-start xl:px-16">
+        <div className=" mx-auto  flex max-w-xl  flex-col px-8 pt-28 text-center lg:max-w-4xl lg:flex-row lg:text-start xl:max-w-6xl xl:px-16">
           <div className="flex w-full flex-col justify-center pl-4 text-white lg:w-1/2">
             <h2 className="text-3xl text-white">Hello mate</h2>
             <h1 className="text-5xl font-light leading-tight">

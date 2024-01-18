@@ -1,6 +1,6 @@
 const AbaoutMe = () => {
   return (
-    <section className="abaoutme">
+    <section id="aboutme" className="abaoutme">
       <div className="mx-auto flex max-w-screen-xl flex-col px-8 py-8 lg:flex-row lg:py-12 xl:px-16">
         <div className="mb-10 flex w-full items-center justify-center bg-center bg-no-repeat px-12 lg:mb-0 lg:w-1/2 lg:justify-end lg:bg-aboutMe">
           <h2 className="titulo_subrayado text-3xl font-semibold uppercase">
@@ -23,10 +23,10 @@ const AbaoutMe = () => {
           </p>
 
           <div className="flex justify-center">
-            <button className="shadow-buttonShadow mx-4 my-5 rounded border-2 border-secondary bg-secondary p-3 text-sm text-white">
+            <button className="mx-4 my-5 rounded border-2 border-secondary bg-secondary p-3 text-sm text-white shadow-buttonShadow transition-all duration-500 hover:scale-105">
               View Works
             </button>
-            <button className="shadow-buttonShadow mx-4 my-5 rounded border-2 border-secondary bg-transparent p-3 text-sm text-secondary">
+            <button className="mx-4 my-5 rounded border-2 border-secondary bg-transparent p-3 text-sm text-secondary shadow-buttonShadow transition-all duration-500 hover:scale-105">
               Download CV
             </button>
           </div>

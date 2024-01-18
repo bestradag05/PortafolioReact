@@ -12,6 +12,7 @@
   font-family: "Poppins";
   --background: #f2f2f2;
   --background-secondary: #eaeaeb; /* e2e2e2 eaeaeb */
+  --background-navbar: #f2f2f2;
   --text-primary: #65727a;
   --text-secondary: #2c2b2b;
   --text-title: #000000;
@@ -24,6 +25,7 @@
 [data-theme="dark"] {
   --background: #0a101e;
   --background-secondary: #121d36;
+  --background-navbar: #121d36;
   --text-primary: #f2f2f2;
   --text-title: #fff;
   --text-secondary: #a7a4a4;
@@ -40,6 +42,10 @@ body {
 
 h2 {
   color: var(--text-title);
+}
+
+nav{
+  background: var(--background-navbar);
 }
 
 .abaoutme,

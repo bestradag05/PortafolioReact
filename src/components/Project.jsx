@@ -10,7 +10,7 @@ const Project = ({ name, text, image, tecnology }) => {
   };
 
   return (
-    <div className="shadow-projectShadow h-full w-4/5 lg:flex lg:max-w-full">
+    <div className="h-full w-4/5 max-w-full shadow-projectShadow lg:flex lg:w-full">
       <div
         className={`relative h-72 max-h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:w-full lg:rounded-l lg:rounded-t-none`}
         onMouseEnter={() => setHovered(true)}
@@ -32,7 +32,10 @@ const Project = ({ name, text, image, tecnology }) => {
               {tecnology.map((tec, index) => {
                 let tecEditado = tec.slice(1);
                 return (
-                  <div key={index} className="w-9 rounded-full bg-primary p-2 ">
+                  <div
+                    key={index}
+                    className="w-12 rounded-full bg-primary p-2 "
+                  >
                     <img src={tecEditado} alt={tecEditado} />
                   </div>
                 );
