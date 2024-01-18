@@ -1,11 +1,22 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState(true);
+  // Si es que es true = dark
+  // si es que es false = ligth
+
+  const [theme, setTheme] = useState(false);
+
+  useEffect(() => {
+    if (theme === true) {
+      document.body.setAttribute("data-theme", "dark");
+    } else {
+      document.body.setAttribute("data-theme", "light");
+    }
+  }, [theme]);
 
   return (
-    <nav className="h-20 bg-primary shadow-navShadow">
-      <div className="container mx-auto flex h-full items-center justify-between px-10">
+    <nav className="h-20">
+      <div className="xl:min-w-7xl md:max-w-8xl mx-auto  flex h-full items-center justify-between px-10 sm:max-w-7xl">
         <a
           className="flex items-center justify-center gap-1 text-xl text-white"
           href="#"
@@ -16,11 +27,11 @@ const Navbar = () => {
           </p>
         </a>
 
-        <div className="text-xl text-white md:hidden">
+        <div className="text-xl text-white lg:hidden">
           <i className="fa-sharp fa-solid fa-bars-sort"></i>
         </div>
 
-        <ul className="hidden items-center justify-center gap-10 text-center text-sm text-white md:flex">
+        <ul className="hidden items-center justify-center gap-10 text-center text-sm text-white lg:flex">
           <li className="nav-link">
             <a href="#" className="">
               Abaout Me

@@ -10,7 +10,7 @@ const Project = ({ name, text, image, tecnology }) => {
   };
 
   return (
-    <div className="w-full max-w-sm p-4 lg:flex lg:max-w-full ">
+    <div className="shadow-projectShadow h-full w-4/5 lg:flex lg:max-w-full">
       <div
         className={`relative h-72 max-h-72 flex-none overflow-hidden rounded-t bg-cover text-center lg:w-full lg:rounded-l lg:rounded-t-none`}
         onMouseEnter={() => setHovered(true)}

@@ -7,9 +7,9 @@ const Header = () => {
       <header className="bg-header bg-cover bg-no-repeat">
         <Navbar />
 
-        <div className=" mx-auto  flex max-w-screen-lg px-8 xl:px-16">
-          <div className="flex w-1/2 flex-col justify-center pl-4 text-white">
-            <h2 className="text-3xl">Hello mate</h2>
+        <div className=" mx-auto  mt-10 flex max-w-screen-sm flex-col px-8 text-center lg:my-0 lg:max-w-screen-xl lg:flex-row lg:text-start xl:px-16">
+          <div className="flex w-full flex-col justify-center pl-4 text-white lg:w-1/2">
+            <h2 className="text-3xl text-white">Hello mate</h2>
             <h1 className="text-5xl font-light leading-tight">
               I'm Bryan Estrada a
               <span className="text-secondary"> Junior Developer</span>
@@ -18,7 +18,7 @@ const Header = () => {
               I'm a Full Stack programmer from Peru. I invite you to explore my
               projects.
             </p>
-            <div className="mt-8 flex gap-10 text-2xl">
+            <div className="mt-8 flex justify-center gap-10 text-2xl lg:justify-start">
               <a href="#" className="social-media">
                 <i className="fa-brands fa-github "></i>
               </a>
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="flex  w-1/2 items-center justify-center px-[60px] pt-[60px]">
+          <div className="flex w-full items-center justify-center px-[60px] pt-[60px] lg:w-1/2">
             <img
               src={portada}
               alt="Portada BegCode: Desarrollador FullStack"

@@ -1,37 +1,64 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic);
 
-
-* {
+:root {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
+  --background: #f2f2f2;
+  --background-secondary: #eaeaeb; /* e2e2e2 eaeaeb */
+  --text-primary: #65727a;
+  --text-secondary: #2c2b2b;
+  --text-title: #000000;
+  --accent: #dfb017;
+  --accent-hover: #cea315;
+  --border: #1f1e1e;
+  --shadow: 7px 15px 13px -4px #00000056;
+}
 
+[data-theme="dark"] {
+  --background: #0a101e;
+  --background-secondary: #121d36;
+  --text-primary: #f2f2f2;
+  --text-title: #fff;
+  --text-secondary: #a7a4a4;
+  --accent: #6a5acd;
+  --accent-hover: #5b4cbe;
+  --border: #696969;
+  --shadow: 7px 15px 13px -4px #ffffff1b;
 }
 
 body {
-  background: #0A101E;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+h2 {
+  color: var(--text-title);
+}
+
+.abaoutme,
+.contatme {
+  background: var(--background-secondary);
 }
 
 .nav-link a {
   position: relative;
 }
 
-
 .nav-link a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .nav-link a:hover::before {
@@ -70,30 +97,29 @@ img {
 }
 
 .titulo_subrayado::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 2px;
-  width: 40%;
+  height: 4px;
+  width: 60%;
   background: #f9c542;
-
 }
 
-.bg-skills-projects{
+.bg-skills {
   position: relative;
 }
 
-.bg-skills-projects::before {
+.bg-skills::before {
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
-  height: 100%;
   width: 100%;
-  mix-blend-mode: soft-light;
+  height: 130%;
+  mix-blend-mode: plus-lighter;
   content: "";
   background: url(./assets/skills/skills_banner.webp) no-repeat;
-  background-position: top;
-  background-size: contain;
+  background-position: bottom;
+  background-size: cover;
   z-index: -1;
 }

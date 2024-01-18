@@ -14,41 +14,47 @@ import Project from "./Project";
 
 const SectionProjects = () => {
   return (
-    <section className=" p-8">
+    <section className=" flex flex-col items-center justify-center p-8 ">
       <div className="mb-10 flex justify-center ">
-        <h2 className="titulo_subrayado text-3xl font-semibold uppercase text-white">
+        <h2 className="titulo_subrayado text-3xl font-semibold uppercase ">
           Projects
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 gap-5">
-        <Project
-          name="APV - Sistema de gestion veterinaria"
-          image={apv}
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-          tecnology={[react, node, express, mongo]}
-        />
+      <div className="grid w-full max-w-screen-sm grid-cols-1 place-content-center gap-10 xl:max-w-screen-xl xl:grid-cols-2">
+        <div className="col-span-1 flex items-center justify-center">
+          <Project
+            name="APV - Sistema de gestion veterinaria"
+            image={apv}
+            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            tecnology={[react, node, express, mongo]}
+          />
+        </div>
+        <div className="col-span-1 flex items-center justify-center">
+          <Project
+            name="Orbe Aduanas S.A.C"
+            image={orbeaduanas}
+            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            tecnology={[html, css, bootstrap, js]}
+          />
+        </div>
 
-        <Project
-          name="Orbe Aduanas S.A.C"
-          image={orbeaduanas}
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-          tecnology={[html, css, bootstrap, js]}
-        />
-
-        <Project
-          name="Contrecargo S.A.C"
-          image={contrecargo}
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-          tecnology={[html, css, bootstrap, js]}
-        />
-
-        <Project
-          name="Tienda Virtual"
-          image={tienda}
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-          tecnology={[html, css, bootstrap, js]}
-        />
+        <div className="col-span-1 flex items-center justify-center">
+          <Project
+            name="Contrecargo S.A.C"
+            image={contrecargo}
+            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            tecnology={[html, css, bootstrap, js]}
+          />
+        </div>
+        <div className="col-span-1 flex items-center justify-center">
+          <Project
+            name="Tienda Virtual"
+            image={tienda}
+            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            tecnology={[html, css, bootstrap, js]}
+          />
+        </div>
       </div>
     </section>
   );
