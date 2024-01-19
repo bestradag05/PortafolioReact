@@ -17,7 +17,7 @@ const Skills = () => {
           My Skills
         </h2>
       </div>
-      <div className="container flex flex-wrap items-center justify-center gap-28 px-8 py-8 lg:py-12">
+      <div className="container mt-10 flex flex-wrap items-center justify-center gap-20 px-8 py-8 lg:py-12">
         <div className="flex h-auto w-14 flex-col items-center justify-center gap-3">
           <img
             src={react}

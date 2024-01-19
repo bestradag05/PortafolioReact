@@ -24,21 +24,27 @@ const SectionProjects = () => {
         </h2>
       </div>
 
-      <div className="grid w-full max-w-screen-lg grid-cols-1 place-content-center gap-10 lg:grid-cols-2 xl:max-w-screen-xl">
+      <div className="grid w-full grid-cols-1 gap-10  lg:max-w-7xl lg:grid-cols-2">
         <div className="col-span-1 flex items-center justify-center">
           <Project
             name="APV - Sistema de gestion veterinaria"
             image={apv}
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            text="Veterinary patient management system with JWT authentication, Express server and MongoDB database, implemented with React.js and styled with Tailwind CSS."
             tecnology={[react, node, express, mongo]}
+            link="https://apvveterinario.netlify.app/"
+            gitVisible={true}
+            github="https://github.com/bestradag05/sistemaVeterinariaFullStack"
           />
         </div>
         <div className="col-span-1 flex items-center justify-center">
           <Project
             name="Orbe Aduanas S.A.C"
             image={orbeaduanas}
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            text="Customized website for a customs agency, with a modern design and sections adapted to the client's needs, as well as a form for direct contact with a commercial advisor."
             tecnology={[html, css, bootstrap, js]}
+            link="https://www.orbeaduanas.com/"
+            gitVisible={false}
+            github=""
           />
         </div>
 
@@ -46,16 +52,22 @@ const SectionProjects = () => {
           <Project
             name="Contrecargo S.A.C"
             image={contrecargo}
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            text="Exclusive website for an agency specialized in customs and cargo, standing out with a modern design and detailing its services effectively."
             tecnology={[html, css, bootstrap, js]}
+            link="https://www.contrecargo.com/"
+            gitVisible={false}
+            github=""
           />
         </div>
         <div className="col-span-1 flex items-center justify-center">
           <Project
             name="Tienda Virtual"
             image={tienda}
-            text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+            text="Virtual store template with modern design and animations that enrich the user experience, providing a more satisfactory shopping experience."
             tecnology={[html, css, bootstrap, js]}
+            link="https://tiendavirtualbegcode.netlify.app/"
+            gitVisible={true}
+            github="https://github.com/bestradag05/TiendaOnline"
           />
         </div>
       </div>

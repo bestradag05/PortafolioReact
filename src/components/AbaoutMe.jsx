@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const AbaoutMe = () => {
   return (
     <section id="aboutme" className="abaoutme">
@@ -23,12 +25,13 @@ const AbaoutMe = () => {
           </p>
 
           <div className="flex justify-center">
-            <button className="mx-4 my-5 rounded border-2 border-secondary bg-secondary p-3 text-sm text-white shadow-buttonShadow transition-all duration-500 hover:scale-105">
+            <Link
+              to="https://github.com/bestradag05"
+              target="_blank"
+              className="mx-4 my-5 rounded border-2 border-secondary bg-secondary p-3 text-sm text-white shadow-buttonShadow transition-all duration-500 hover:scale-105"
+            >
               View Works
-            </button>
-            <button className="mx-4 my-5 rounded border-2 border-secondary bg-transparent p-3 text-sm text-secondary shadow-buttonShadow transition-all duration-500 hover:scale-105">
-              Download CV
-            </button>
+            </Link>
           </div>
         </div>
       </div>

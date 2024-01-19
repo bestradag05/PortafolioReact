@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ scrolling, setScrolling }) => {
-  // Si es que es true = dark
-  // si es que es false = ligth
   const [theme, setTheme] = useState(false);
   const [menu, setMenu] = useState(false);
 
@@ -20,8 +18,13 @@ const Navbar = ({ scrolling, setScrolling }) => {
 
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
-      setMenu(false); // Cerrar el menú después de hacer clic en un enlace
+      setMenu(false);
     }
+  };
+
+  const handleThemeChange = (e) => {
+    e.preventDefault(); // Evitar comportamiento predeterminado del enlace
+    setTheme(!theme);
   };
 
   useEffect(() => {
@@ -37,31 +40,34 @@ const Navbar = ({ scrolling, setScrolling }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Agrega un array vacío para que el efecto se ejecute solo una vez al montar/desmontar el componente
+  }, []);
 
   return (
     <nav
       className={` ${scrolling ? " z-50 bg-none " : "bg-transparent text-white"} fixed top-0 h-20 w-full transition-all duration-500`}
     >
       <div className="mx-auto flex  h-full max-w-xl items-center justify-between px-10 md:max-w-3xl lg:max-w-6xl ">
-        <a className="flex items-center justify-center gap-1 text-xl " href="#">
+        <Link
+          className="flex items-center justify-center gap-1 text-xl "
+          to="/"
+        >
           <i className="fa-solid fa-code"></i>
           <p>
             Beg<span className="text-secondary">Code</span>
           </p>
-        </a>
+        </Link>
 
         <div className="flex w-full items-center justify-end">
           <div className="flex  gap-10 ">
             <div className={!theme ? "hidden" : "block"}>
-              <a href="#" onClick={() => setTheme(!theme)}>
+              <Link to="/" onClick={handleThemeChange}>
                 <i className="fa-solid fa-sun-bright"></i>
-              </a>
+              </Link>
             </div>
             <div className={theme ? "hidden" : "block"}>
-              <a href="#" onClick={() => setTheme(!theme)}>
+              <Link to="/" onClick={handleThemeChange}>
                 <i className="fa-solid fa-moon-stars"></i>
-              </a>
+              </Link>
             </div>
             <div className="text-xl  lg:hidden" onClick={() => setMenu(!menu)}>
               <i className="fa-sharp fa-solid fa-bars-sort"></i>
