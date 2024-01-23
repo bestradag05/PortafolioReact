@@ -18,17 +18,25 @@ const AbaoutMe = () => {
           className="w-full px-12 lg:w-1/2"
         >
           <p className="mb-4 text-justify xl:text-lg ">
-            Bachelor in Systems Engineering with experience in technical support
-            for more than 2 years. Passionate about programming and web
-            development, always looking for new challenges and opportunities to
-            grow in this exciting field.
+            As a Systems Engineer and{" "}
+            <span className="text-secondary">Full-Stack Developer</span>, I
+            specialize in transforming ideas into functional code, addressing
+            challenges with a disciplined approach. Proficient in{" "}
+            <span className="text-secondary">React</span> for the frontend and{" "}
+            <span className="text-secondary">Node.js with Express</span> for the
+            backend, I manage{" "}
+            <span className="text-secondary">MongoDB and MySQL</span> databases,
+            ensuring the creation of visually attractive and interactive
+            websites.
           </p>
           <p className="mb-4 text-justify xl:text-lg ">
-            My primary focus is on JavaScript, Java, and PHP, and I have gained
-            a solid knowledge of each of them. I consider myself a self-taught
-            person, constantly learning and improving my skills to offer
-            innovative and efficient solutions. Let's connect and explore the
-            possibilities of working together!
+            Beyond coding, I enjoy soccer, continuous learning, and hands-on
+            projects. As a respectful and responsible team player, I thrive in a
+            harmonious work environment, contributing to an efficient and
+            organized approach. With a solid foundation in{" "}
+            <span className="text-secondary">Java</span>, I'm eager to connect
+            and discuss how I can bring valuable contributions to your projects.
+            Let's explore exciting possibilities!
           </p>
 
           <div className="flex justify-center">
