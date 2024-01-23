@@ -6,8 +6,14 @@ import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init({
+    offset: 300,
+    duration: 600,
+  });
   const [scrolling, setScrolling] = useState(false);
 
   return (

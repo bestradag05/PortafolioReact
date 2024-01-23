@@ -24,7 +24,7 @@ const SectionProjects = () => {
         </h2>
       </div>
 
-      <div className="grid w-full grid-cols-1 gap-10  lg:max-w-7xl lg:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-10  lg:max-w-7xl lg:grid-cols-2 xl:max-w-screen-2xl">
         <div className="col-span-1 flex items-center justify-center">
           <Project
             name="APV - Sistema de gestion veterinaria"
