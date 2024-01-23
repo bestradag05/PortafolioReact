@@ -6,7 +6,7 @@ const AbaoutMe = () => {
       <div className="mx-auto flex max-w-screen-xl flex-col px-8 py-8 lg:flex-row lg:py-12 xl:max-w-screen-2xl xl:px-16">
         <div
           data-aos="fade-right"
-          className="mb-10 flex w-full items-center justify-center bg-center bg-no-repeat px-12 lg:mb-0 lg:w-1/2 lg:justify-end lg:bg-aboutMe"
+          className="mb-10 flex w-full items-center justify-center bg-center bg-no-repeat px-12 lg:mb-0 lg:w-1/2 lg:justify-end lg:bg-[url(../src/assets/about_me.png)]"
         >
           <h2 className="titulo_subrayado text-3xl font-semibold uppercase">
             About Me

@@ -3,10 +3,6 @@ export default {
   content: ["index.html", "./src/**/*.jsx"],
   theme: {
     extend: {
-      backgroundImage: {
-        header: "url(./src/assets/fondo.jpg)",
-        aboutMe: "url(./src/assets/about_me.png)",
-      },
       colors: {
         primary: "#", // Tu color personalizado
         secondary: "#f9c542",

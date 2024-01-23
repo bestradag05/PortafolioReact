@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
-      <header className="bg-header bg-cover bg-no-repeat">
+      <header className="bg-cover bg-no-repeat">
         <div className=" mx-auto  flex max-w-xl  flex-col px-8 pt-28 text-center lg:max-w-4xl lg:flex-row  lg:text-start  xl:max-w-screen-xl xl:px-16">
           <div className="flex w-full flex-col justify-center pl-4 text-white lg:w-1/2">
             <h2 className="text-3xl text-white xl:text-5xl">Hello mate</h2>

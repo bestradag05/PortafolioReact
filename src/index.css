@@ -48,6 +48,10 @@ nav{
   background: var(--background-navbar);
 }
 
+header{
+  background-image: url(./assets/fondo.jpg);
+}
+
 .abaoutme,
 .contatme {
   background: var(--background-secondary);
