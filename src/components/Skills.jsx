@@ -14,7 +14,7 @@ const Skills = () => {
     >
       <div className="">
         <h2
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="titulo_subrayado text-3xl font-semibold uppercase"
         >
           My Skills
@@ -22,7 +22,7 @@ const Skills = () => {
       </div>
       <div className="container mt-10 flex flex-wrap items-center justify-center gap-20 px-8 py-8 lg:py-12 xl:justify-around">
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -34,7 +34,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -46,7 +46,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -70,7 +70,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -82,7 +82,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -94,7 +94,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img

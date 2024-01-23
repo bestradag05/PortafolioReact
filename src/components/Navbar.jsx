@@ -58,7 +58,7 @@ const Navbar = ({ scrolling, setScrolling }) => {
         </Link>
 
         <div className="flex w-full items-center justify-end">
-          <div className="flex  gap-10 xl:text-xl">
+          <div className="flex  gap-10 xl:text-lg">
             <div className={!theme ? "hidden" : "block"}>
               <Link to="/" onClick={handleThemeChange}>
                 <i className="fa-solid fa-sun-bright"></i>
@@ -75,7 +75,7 @@ const Navbar = ({ scrolling, setScrolling }) => {
           </div>
 
           <ul
-            className={` ${menu ? " z-100 opacity-100 transition-opacity duration-300" : "pointer-events-none  opacity-0 transition-opacity duration-300"}  fixed right-0 top-0 flex h-full w-1/2 flex-col items-center justify-center gap-5 bg-primaryLight p-4 text-center text-sm lg:pointer-events-auto lg:sticky lg:h-auto  lg:flex-row lg:gap-10 lg:bg-transparent lg:text-lg lg:opacity-100 lg:transition-none`}
+            className={` ${menu ? " z-100 opacity-100 transition-opacity duration-300" : "pointer-events-none  opacity-0 transition-opacity duration-300"}  lg:text-md fixed right-0 top-0 flex h-full w-1/2 flex-col items-center justify-center gap-5 bg-primaryLight p-4 text-center text-sm lg:pointer-events-auto lg:sticky  lg:h-auto lg:flex-row lg:gap-10 lg:bg-transparent lg:opacity-100 lg:transition-none`}
           >
             <div
               className={`${menu ? "block" : " hidden"} absolute right-10 top-10 text-2xl lg:hidden`}

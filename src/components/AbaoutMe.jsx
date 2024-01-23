@@ -17,13 +17,13 @@ const AbaoutMe = () => {
           data-aos-delay="150"
           className="w-full px-12 lg:w-1/2"
         >
-          <p className="mb-4 text-justify xl:text-xl ">
+          <p className="mb-4 text-justify xl:text-lg ">
             Bachelor in Systems Engineering with experience in technical support
             for more than 2 years. Passionate about programming and web
             development, always looking for new challenges and opportunities to
             grow in this exciting field.
           </p>
-          <p className="mb-4 text-justify xl:text-xl ">
+          <p className="mb-4 text-justify xl:text-lg ">
             My primary focus is on JavaScript, Java, and PHP, and I have gained
             a solid knowledge of each of them. I consider myself a self-taught
             person, constantly learning and improving my skills to offer
