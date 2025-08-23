@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./assets/font-awesome/font-awesome-pro.js";
 
 function App() {
   AOS.init({

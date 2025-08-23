@@ -1,3 +1,5 @@
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -58,22 +60,6 @@ const Navbar = ({ scrolling, setScrolling }) => {
         </Link>
 
         <div className="flex w-full items-center justify-end">
-          <div className="flex  gap-10 xl:text-lg">
-            <div className={!theme ? "hidden" : "block"}>
-              <Link to="/" onClick={handleThemeChange}>
-                <i className="fa-solid fa-sun-bright"></i>
-              </Link>
-            </div>
-            <div className={theme ? "hidden" : "block"}>
-              <Link to="/" onClick={handleThemeChange}>
-                <i className="fa-solid fa-moon-stars"></i>
-              </Link>
-            </div>
-            <div className="text-xl  lg:hidden" onClick={() => setMenu(!menu)}>
-              <i className="fa-sharp fa-solid fa-bars-sort"></i>
-            </div>
-          </div>
-
           <ul
             className={` ${menu ? " z-100 opacity-100 transition-opacity duration-300" : "pointer-events-none  opacity-0 transition-opacity duration-300"}  lg:text-md fixed right-0 top-0 flex h-full w-1/2 flex-col items-center justify-center gap-5 bg-primaryLight p-4 text-center text-sm lg:pointer-events-auto lg:sticky  lg:h-auto lg:flex-row lg:gap-10 lg:bg-transparent lg:opacity-100 lg:transition-none`}
           >
@@ -102,6 +88,25 @@ const Navbar = ({ scrolling, setScrolling }) => {
               </Link>
             </li>
           </ul>
+          <div className="flex  gap-10 xl:text-lg">
+            <div className={!theme ? "hidden" : "block"}>
+              <Link to="/" onClick={handleThemeChange}>
+                <label htmlFor="theme-switch" className="text-lg">
+                  <FontAwesomeIcon icon={faSun} />
+                </label>
+              </Link>
+            </div>
+            <div className={theme ? "hidden" : "block"}>
+              <Link to="/" onClick={handleThemeChange}>
+                <label htmlFor="theme-switch" className="text-lg">
+                  <FontAwesomeIcon icon={faMoon} />
+                </label>
+              </Link>
+            </div>
+            <div className="text-xl  lg:hidden" onClick={() => setMenu(!menu)}>
+              <i className="fa-sharp fa-solid fa-bars-sort"></i>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

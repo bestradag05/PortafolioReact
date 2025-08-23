@@ -1,5 +1,7 @@
 import react from "../assets/skills/react.png";
 import node from "../assets/skills/node.png";
+import php from "../assets/skills/php.png";
+import laravel from "../assets/skills/laravel.png";
 import express from "../assets/skills/express.png";
 import bs from "../assets/skills/bootstrap.png";
 import mongo from "../assets/skills/mongo.png";
@@ -32,7 +34,28 @@ const Skills = () => {
           />
           <p className="text-xl font-semibold uppercase">React</p>
         </div>
-
+        <div
+          data-aos="fade-up"
+          className="flex h-auto w-14 flex-col items-center justify-center gap-3"
+        >
+          <img
+            src={php}
+            alt="Node.js"
+            className="transition-all duration-500 hover:scale-125"
+          />
+          <p className="text-xl font-semibold uppercase">PHP</p>
+        </div>
+        <div
+          data-aos="fade-up"
+          className="flex h-auto w-14 flex-col items-center justify-center gap-3"
+        >
+          <img
+            src={laravel}
+            alt="Node.js"
+            className="transition-all duration-500 hover:scale-125"
+          />
+          <p className="text-xl font-semibold uppercase">LARAVEL</p>
+        </div>
         <div
           data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
@@ -44,7 +67,6 @@ const Skills = () => {
           />
           <p className="text-xl font-semibold uppercase">Node.js</p>
         </div>
-
         <div
           data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
