@@ -1,6 +1,8 @@
 import react from "../assets/skills/react.png";
 import node from "../assets/skills/node.png";
 import express from "../assets/skills/express.png";
+import laravel from "../assets/skills/laravel.png";
+import docker from "../assets/skills/docker.png";
 import bs from "../assets/skills/bootstrap.png";
 import mongo from "../assets/skills/mongo.png";
 import mysql from "../assets/skills/mysql.png";
@@ -55,6 +57,28 @@ const Skills = () => {
             className="transition-all duration-500 hover:scale-125"
           />
           <p className="text-xl font-semibold uppercase">Express</p>
+        </div>
+        <div
+          data-aos="fade-right"
+          className="flex h-auto w-14 flex-col items-center justify-center gap-3"
+        >
+          <img
+            src={laravel}
+            alt="laravel"
+            className="transition-all duration-500 hover:scale-125"
+          />
+          <p className="text-xl font-semibold uppercase">Laravel</p>
+        </div>
+        <div
+          data-aos="fade-right"
+          className="flex h-auto w-14 flex-col items-center justify-center gap-3"
+        >
+          <img
+            src={docker}
+            alt="Docker"
+            className="transition-all duration-500 hover:scale-125"
+          />
+          <p className="text-xl font-semibold uppercase">Docker</p>
         </div>
 
         <div

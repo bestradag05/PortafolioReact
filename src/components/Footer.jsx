@@ -15,7 +15,7 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex w-1/3 items-center justify-center text-center text-sm xl:text-xl">
-          <p>&copy; 2023 Bryan Estrada. All rights reserved.</p>
+          <p>&copy; 2025 Bryan Estrada. All rights reserved.</p>
         </div>
         <div className="flex w-1/3 items-center  justify-evenly text-center xl:text-2xl">
           <Link

@@ -18,17 +18,21 @@ const AbaoutMe = () => {
           className="w-full px-12 lg:w-1/2"
         >
           <p className="mb-4 text-justify xl:text-xl ">
-            Bachelor in Systems Engineering with experience in technical support
-            for more than 2 years. Passionate about programming and web
-            development, always looking for new challenges and opportunities to
-            grow in this exciting field.
+            I am a Systems Engineer with a deep passion for programming and web
+            development. With more than 5 years of experience creating scalable
+            and efficient solutions, I specialize in technologies such as
+            JavaScript, PHP, Laravel, React and NodeJS. I consider myself a
+            self-taught professional, always constantly learning and seeking new
+            challenges that allow me to improve my skills.
           </p>
           <p className="mb-4 text-justify xl:text-xl ">
-            My primary focus is on JavaScript, Java, and PHP, and I have gained
-            a solid knowledge of each of them. I consider myself a self-taught
-            person, constantly learning and improving my skills to offer
-            innovative and efficient solutions. Let's connect and explore the
-            possibilities of working together!
+            My focus is on offering innovative and high-performance solutions,
+            optimizing processes and developing applications that make a
+            difference. I am committed to the development of quality software,
+            and I am passionate about collaborating on projects that challenge
+            my abilities and allow me to grow as a programmer. If you are
+            looking for a committed, creative and results-oriented developer,
+            let's connect!
           </p>
 
           <div className="flex justify-center">
