@@ -20,7 +20,7 @@ const AbaoutMe = () => {
           <p className="mb-4 text-justify xl:text-xl ">
             I am a Systems Engineer with a deep passion for programming and web
             development. With more than 5 years of experience creating scalable
-            and efficient solutions, I specialize in technologies such as <span className="text-secondary">JavaScript, PHP, Laravel, React and NodeJS</span>. I consider myself a
+            and efficient solutions, I specialize in technologies such as <span className="text-secondary">JavaScript, PHP, Laravel, React and Node.js</span>. I consider myself a
             self-taught professional, always constantly learning and seeking new
             challenges that allow me to improve my skills.
           </p>
