@@ -91,14 +91,14 @@ const Navbar = ({ scrolling, setScrolling }) => {
           <div className="flex  gap-10 xl:text-lg">
             <div className={!theme ? "hidden" : "block"}>
               <Link to="/" onClick={handleThemeChange}>
-                <label htmlFor="theme-switch" className="text-lg">
+                <label htmlFor="theme-switch" className="text-lg cursor-pointer">
                   <FontAwesomeIcon icon={faSun} />
                 </label>
               </Link>
             </div>
             <div className={theme ? "hidden" : "block"}>
               <Link to="/" onClick={handleThemeChange}>
-                <label htmlFor="theme-switch" className="text-lg">
+                <label htmlFor="theme-switch" className="text-lg cursor-pointer">
                   <FontAwesomeIcon icon={faMoon} />
                 </label>
               </Link>

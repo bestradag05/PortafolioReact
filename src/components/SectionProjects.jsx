@@ -1,7 +1,8 @@
+import googlecalendar from "../assets/projects/googlecalendar.png";
 import apv from "../assets/projects/apvveterinario.png";
 import contrecargo from "../assets/projects/contrecargo.png";
 import orbeaduanas from "../assets/projects/orbeaduanas.png";
-import soundHarbor from '../assets/projects/soundharbor.png'
+import soundHarbor from "../assets/projects/soundharbor.png";
 import tienda from "../assets/projects/tienda-virtual.png";
 import react from "../assets/skills/react.png";
 import node from "../assets/skills/node.png";
@@ -27,6 +28,17 @@ const SectionProjects = () => {
       </div>
 
       <div className="grid w-full grid-cols-1 gap-10  lg:max-w-7xl lg:grid-cols-2 xl:max-w-screen-2xl">
+        <div className="col-span-1 flex items-center justify-center">
+          <Project
+            name="Google Calendar - begcode"
+            image={googlecalendar}
+            text="It is a modern replica of Google Calendar built with React, Express and MongoDB. Offers secure authentication with JWT and an intuitive interface to create, edit and manage your events from any device"
+            tecnology={[react, express, mongo]}
+            link="https://begcodecalendar.netlify.app/"
+            gitVisible={true}
+            github="https://github.com/bestradag05/backend---Calendar-MERN"
+          />
+        </div>
         <div className="col-span-1 flex items-center justify-center">
           <Project
             name="APV - Sistema de gestion veterinaria"
