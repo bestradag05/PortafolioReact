@@ -1,3 +1,6 @@
+import { faEnvelope, faInfo, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const ContactMe = () => {
   return (
     <section
@@ -12,7 +15,7 @@ const ContactMe = () => {
       <div className="flex w-1/2 flex-col items-start justify-center gap-20 lg:w-full lg:flex-row lg:items-center ">
         <div className="flex items-center justify-center">
           <div className=" mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary shadow-buttonShadow xl:text-3xl">
-            <i className="fa-solid fa-envelope"></i>
+            <FontAwesomeIcon icon={faEnvelope} />
           </div>
           <div className="">
             <span className="text-sm text-gray-400 xl:text-lg">Mail us</span>
@@ -23,7 +26,7 @@ const ContactMe = () => {
 
         <div className="flex items-center justify-center">
           <div className="mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary shadow-buttonShadow xl:text-3xl">
-            <i className="fa-solid fa-phone"></i>
+             <FontAwesomeIcon icon={faPhone} />
           </div>
           <div className="">
             <span className="text-sm text-gray-400 xl:text-xl">Contact us</span>
@@ -33,7 +36,7 @@ const ContactMe = () => {
 
         <div className="flex items-center justify-center">
           <div className="mr-5 flex h-auto items-center justify-center rounded-xl bg-white p-3 text-xl text-secondary shadow-buttonShadow xl:text-3xl">
-            <i className="fa-brands fa-linkedin"></i>
+            <FontAwesomeIcon icon={faInfo} />
           </div>
           <div className="">
             <span className="text-sm text-gray-400 xl:text-xl">Linkendin</span>

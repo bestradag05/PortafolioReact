@@ -1,6 +1,7 @@
 import apv from "../assets/projects/apvveterinario.png";
 import contrecargo from "../assets/projects/contrecargo.png";
 import orbeaduanas from "../assets/projects/orbeaduanas.png";
+import soundHarbor from '../assets/projects/soundharbor.png'
 import tienda from "../assets/projects/tienda-virtual.png";
 import react from "../assets/skills/react.png";
 import node from "../assets/skills/node.png";
@@ -9,6 +10,7 @@ import mongo from "../assets/skills/mongo.png";
 import html from "../assets/skills/html.png";
 import css from "../assets/skills/css.png";
 import bootstrap from "../assets/skills/bootstrap.png";
+import tailwind from "../assets/skills/tailwind.png";
 import js from "../assets/skills/js.png";
 import Project from "./Project";
 
@@ -68,6 +70,18 @@ const SectionProjects = () => {
             link="https://tiendavirtualbegcode.netlify.app/"
             gitVisible={true}
             github="https://github.com/bestradag05/TiendaOnline"
+          />
+        </div>
+
+        <div className="col-span-1 flex items-center justify-center">
+          <Project
+            name="SoundHarbor"
+            image={soundHarbor}
+            text="SoundHarbor is a fullstack application using Node.js and Express on the backend, and React with Tailwind CSS on the frontend. It allows users to search and discover music through integration with the Spotify API."
+            tecnology={[react, tailwind]}
+            link="https://soundharborpe.netlify.app/"
+            gitVisible={true}
+            github="https://github.com/bestradag05/SoundHarbor-Frontend"
           />
         </div>
       </div>

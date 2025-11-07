@@ -1,5 +1,7 @@
 import react from "../assets/skills/react.png";
 import node from "../assets/skills/node.png";
+import php from "../assets/skills/php.png";
+import laravel from "../assets/skills/laravel.png";
 import express from "../assets/skills/express.png";
 import laravel from "../assets/skills/laravel.png";
 import docker from "../assets/skills/docker.png";
@@ -16,7 +18,7 @@ const Skills = () => {
     >
       <div className="">
         <h2
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="titulo_subrayado text-3xl font-semibold uppercase"
         >
           My Skills
@@ -24,7 +26,7 @@ const Skills = () => {
       </div>
       <div className="container mt-10 flex flex-wrap items-center justify-center gap-20 px-8 py-8 lg:py-12 xl:justify-around">
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -34,9 +36,30 @@ const Skills = () => {
           />
           <p className="text-xl font-semibold uppercase">React</p>
         </div>
-
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
+          className="flex h-auto w-14 flex-col items-center justify-center gap-3"
+        >
+          <img
+            src={php}
+            alt="Node.js"
+            className="transition-all duration-500 hover:scale-125"
+          />
+          <p className="text-xl font-semibold uppercase">PHP</p>
+        </div>
+        <div
+          data-aos="fade-up"
+          className="flex h-auto w-14 flex-col items-center justify-center gap-3"
+        >
+          <img
+            src={laravel}
+            alt="Node.js"
+            className="transition-all duration-500 hover:scale-125"
+          />
+          <p className="text-xl font-semibold uppercase">LARAVEL</p>
+        </div>
+        <div
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -46,9 +69,8 @@ const Skills = () => {
           />
           <p className="text-xl font-semibold uppercase">Node.js</p>
         </div>
-
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -94,7 +116,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -106,7 +128,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
@@ -118,7 +140,7 @@ const Skills = () => {
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="flex h-auto w-14 flex-col items-center justify-center gap-3"
         >
           <img
